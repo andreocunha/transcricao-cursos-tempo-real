@@ -1,38 +1,147 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
+  height: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.App h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.traducaoSimultaneaContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.traducaoSimultaneaArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+  height: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0a576c;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+  /* allow scroll in div */
+  overflow: auto;
+  
+  /* auto scroll down */
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.traducaoSimultaneaArea h5 {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  color: #c5c511;
+  margin-bottom: 10px;
+}
+
+.traducaoSimultaneaArea p {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.TextAreaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0;
+  gap: 15px;
+  
+  /* border line on top and bottom */
+  border-top: 0.5px solid #ffffff;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.TextAreaContainer h4 {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.TextAreaContainer textarea {
+  width: 80%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0a576c;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 17px;
+  resize: none;
+}
+
+.TextAreaContainer button {
+  width: 81%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #3652a7;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.TextAreaContainer button:hover {
+  filter: brightness(0.8);
+}
+
+.TranscribedCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  min-height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0a576c;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+.TranscribedCard h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
 }
